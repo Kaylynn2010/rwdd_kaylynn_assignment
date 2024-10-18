@@ -111,24 +111,24 @@
             transform: scale(1);
         }       
 
-        /* .wrapper.active {
+        .wrapper.active {
             height: 520px;
-        } */
+        } 
 
         .wrapper .form-box {
             width: 100%;
             padding: 40px;
         }
 
-        /* .wrapper .form-box.login {
+        .wrapper .form-box.login {
             transition: transform .18s ease;
             transform: translateX(0);
-        } */
+        } 
 
-        /* .wrapper.active .form-box.login {
+        .wrapper.active .form-box.login {
             transition: none;
             transform: translateX(-400px);
-        } */
+        }
 
         .wrapper .icon-close {
             position: absolute;
