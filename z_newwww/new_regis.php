@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: url('../images/login_backgroud.jpeg') no-repeat;
+            background: url('../images/background.jpeg') no-repeat;
             background-size: cover;
             background-position: center;
         }

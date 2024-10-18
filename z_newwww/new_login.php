@@ -125,10 +125,10 @@
             transform: translateX(0);
         } */
 
-        .wrapper.active .form-box.login {
+        /* .wrapper.active .form-box.login {
             transition: none;
             transform: translateX(-400px);
-        }
+        } */
 
         .wrapper .icon-close {
             position: absolute;
