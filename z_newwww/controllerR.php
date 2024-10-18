@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../config/configLR.php'; // leave dir alone
-require_once __DIR__ . '/../lib/dbconnL.php'; 
+require_once __DIR__ . '/../lib/dbconnR.php'; 
 
 class AuthController
 {
@@ -34,7 +34,7 @@ class AuthController
                 $stmt->fetch();
 
             
-                if ($password === $hashedPassword) {
+                if (password_verify($password, $hashedPassword)) {
                     // Login successful
                     echo json_encode(['success' => true]);
                 } else {
