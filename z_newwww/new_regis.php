@@ -42,7 +42,7 @@
             user-select: none;
         }
 
-        .navigation a {
+        .navigation a, .navigation .btnLogin-popup { /* btnRegister */
             position: relative;
             font-size: 1.1em;
             color: #fff;

@@ -42,16 +42,16 @@
             user-select: none;
         }
 
-        .navigation a {
+        .navigation a, .navigation .btnLogin-popup {
             position: relative;
             font-size: 1.1em;
             color: #fff;
             text-decoration: none;
             font-weight: 500;
-         margin-left: 40px;
+            margin-left: 40px;
         }
 
-        .navigation a::after {
+        /* .navigation a::after {
             content: '';
             position: absolute;
             left: 0;
@@ -68,7 +68,7 @@
         .navigation a:hover::after {
             transform-origin: left;
             transform: scaleX(1);
-        }
+        } */
 
         .navigation .btnLogin-popup {
             width: 130px;
@@ -145,9 +145,9 @@
             border-top-left-radius: 20px;
             cursor: pointer;
             z-index: 1;
-        }
+        } */
 
-        .form-box h2 {
+        /* .form-box h2 {
             font-size: 2em;
             color: #162938;
             text-align: center;
@@ -190,13 +190,13 @@
             padding: 0 35px 0 5px;
         }
 
-        .input-box .icon {
+        /* .input-box .icon {
             position: absolute;
             right: 8px;
             font-size: 1.2em;
             color: #162938;
             line-height: 57px;
-        }
+        } */
 
         .remember-forgot {
             font-size: .9em;
