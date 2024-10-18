@@ -1,9 +1,9 @@
 <?php
-
+// controllerR
 require_once __DIR__ . '/../config/configLR.php'; // leave dir alone
 require_once __DIR__ . '/../lib/dbconnR.php'; 
 
-class AuthController
+class AuthController1
 {
 
     private $db;
@@ -14,7 +14,7 @@ class AuthController
         $this->db = new Database($GLOBALS['servername'], $GLOBALS['username'], $GLOBALS['password'], $GLOBALS['dbname']);
     }
 
-    public function login($data)
+    public function register($data)
     {
         header('Content-Type: application/json');
 
@@ -33,7 +33,7 @@ class AuthController
                 $stmt->bind_result($hashedPassword);
                 $stmt->fetch();
 
-            
+                // verify
                 if (password_verify($password, $hashedPassword)) {
                     // Login successful
                     echo json_encode(['success' => true]);
@@ -56,3 +56,4 @@ class AuthController
         $this->db->closeConnection();
     }
 }
+?>

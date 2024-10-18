@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: url('../images/login_backgroud.jpeg') no-repeat;
+            background: url('../images/background.jpeg') no-repeat;
             background-size: cover;
             background-position: center;
         }
@@ -111,19 +111,19 @@
             transform: scale(1);
         }       
 
-        .wrapper.active {
+        /* .wrapper.active {
             height: 520px;
-        }
+        } */
 
         .wrapper .form-box {
             width: 100%;
             padding: 40px;
         }
 
-        .wrapper .form-box.login {
+        /* .wrapper .form-box.login {
             transition: transform .18s ease;
             transform: translateX(0);
-        }
+        } */
 
         .wrapper.active .form-box.login {
             transition: none;
@@ -274,43 +274,7 @@
             </form>
         </div>
 
-        <div class="form-box register">
-            <h2>Registration</h2>
-            <form id="registerForm" action="#">
-                <div class="input-box">
-                    <span class="icon">
-                    <ion-icon name="person"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                    <ion-icon name="email"></ion-icon>
-                    </span>
-                    <input type="email" name="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon">
-                    <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <input type="password" name="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">I agree to the Terms & Conditions</label>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account?<a href="#" class="login-link"> Login</a>
-                    </p>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <script src="/rwdd_kaylynn_assignment/public_frontend/js/auth_script.js"></script>
+    <script src="/rwdd_kaylynn_assignment/public_frontend/js/log_script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
