@@ -1,8 +1,3 @@
-<?php
-    // include 'databaseconfig.php';
-    // include 'Database.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
