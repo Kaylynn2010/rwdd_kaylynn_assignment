@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTRATION</title>
+    <title>REGISTRATION AND LOGIN</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <button class="btnLogin-popup">Login</button>
         </nav>
     </header>
-    <!-- <div class="wrapper">
+    <div class="wrapper">
         <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
 
         <div class="form-box login">
@@ -21,16 +21,16 @@
             <form action="#">
                 <div class="input-box">
                     <span class="icon">
-                    <ion-icon name="mail-outline"></ion-icon>
+                    <ion-icon name="email"></ion-icon>
                     </span>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                     <ion-icon name="lock-closed-outline"></ion-icon>
                     </span>
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -43,7 +43,7 @@
                     </p>
                 </div>
             </form>
-        </div> -->
+        </div>
 
         <div class="form-box register">
             <h2>Registration</h2>
@@ -57,16 +57,16 @@
                 </div>
                 <div class="input-box">
                     <span class="icon">
-                    <ion-icon name="mail"></ion-icon>
+                    <ion-icon name="email"></ion-icon>
                     </span>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                     <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <label>Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -86,3 +86,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
+
