@@ -33,9 +33,8 @@ class AuthController
                 $stmt->bind_result($hashedPassword);
                 $stmt->fetch();
 
-                // Verify the password (assuming you are using password_hash for storing passwords)
-                // if (password_verify($password, $hashedPassword)) {
-                if ($password === $hashedPassword) {
+            
+                if (password_verify($password, $hashedPassword)) {
                     // Login successful
                     echo json_encode(['success' => true]);
                 } else {
@@ -57,28 +56,4 @@ class AuthController
         $this->db->closeConnection();
     }
 
-    // Testing without database
-    // public function login($data)
-    // {
-    //     header('Content-Type: application/json');
-
-    //     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    //         $data = json_decode(file_get_contents('php://input'), true);
-    //         $email = $data['email'] ?? '';
-    //         $password = $data['password'] ?? '';
-
-    //         // Validate credentials (this is just a placeholder, implement your own logic)
-    //         if ($email === 'user@example.com' && $password === 'password') {
-    //             // Login successful
-    //             echo json_encode(['success' => true]);
-    //         } else {
-    //             ob_end_flush(); // Flush the output buffer
-    //             // Invalid credentials
-    //             echo json_encode(['success' => false, 'message' => 'Invalid email or password.']);
-    //         }
-    //     } else {
-    //         // Handle invalid request method
-    //         echo json_encode(['success' => false, 'message' => 'Invalid request.']);
-    //     }
-    // }
 }
