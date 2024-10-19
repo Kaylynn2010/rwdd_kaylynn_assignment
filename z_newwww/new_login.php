@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Login</title>
-    <style>
+    <link rel="stylesheet" href="/rwdd_kaylynn_assignment/z_newwww/css/styleA.css">
+    <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
         * {
@@ -51,7 +52,7 @@
             margin-left: 40px;
         }
 
-        /* .navigation a::after {
+        .navigation a::after {
             content: '';
             position: absolute;
             left: 0;
@@ -68,7 +69,7 @@
         .navigation a:hover::after {
             transform-origin: left;
             transform: scaleX(1);
-        } */
+        }
 
         .navigation .btnLogin-popup {
             width: 130px;
@@ -145,9 +146,9 @@
             border-top-left-radius: 20px;
             cursor: pointer;
             z-index: 1;
-        } */
+        } 
 
-        /* .form-box h2 {
+        .form-box h2 {
             font-size: 2em;
             color: #162938;
             text-align: center;
@@ -190,13 +191,13 @@
             padding: 0 35px 0 5px;
         }
 
-        /* .input-box .icon {
+        .input-box .icon {
             position: absolute;
             right: 8px;
             font-size: 1.2em;
             color: #162938;
             line-height: 57px;
-        } */
+        }
 
         .remember-forgot {
             font-size: .9em;
@@ -233,7 +234,7 @@
             color: #fff;
             font-weight: 500;
         }
-    </style>
+    </style> -->
     </head>
 <body>
     <header>
